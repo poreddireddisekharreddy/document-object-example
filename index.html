@@ -1,0 +1,29 @@
+) <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document Object Example</title>
+    <script>
+        function showDocumentProperties() {
+            document.getElementById("info").innerHTML =
+                "Title: " + document.title + "<br>" +
+                "URL: " + document.URL + "<br>" +
+                "Last Modified: " + document.lastModified;
+        }
+
+        function changeTitle() {
+            document.title = "New Document Title";
+            alert("Document title changed!");
+        }
+    </script>
+</head>
+<body onload="showDocumentProperties()">
+
+    <h2>Document Object Example</h2>
+    <div id="info"></div>
+
+    <br>
+    <button onclick="changeTitle()">Change Document Title</button>
+
+</body>
+</html>
